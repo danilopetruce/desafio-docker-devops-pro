@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: conversao-peso
+    image: danilopetruce/conversao-peso:latest
+    ports:
+      - '8080:80'
