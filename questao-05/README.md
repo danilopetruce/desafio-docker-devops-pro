@@ -1,0 +1,3 @@
+# Questão 05
+Excelente! Depois de fixar a criação de ambientes em containers para banco de dados, o objetivo agora é subir uma solução já existente no mercado: uma solução Wordpress em containers !!! Crie o seu docker compose utilizando a imagem oficial do Wordpress:
+https://hub.docker.com/_/wordpress
