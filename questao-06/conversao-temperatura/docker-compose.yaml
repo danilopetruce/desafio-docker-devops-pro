@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    image: node
+    build:
+      dockerfile: ./Dockerfile
+      context: ./src
+    ports:
+      - 8080:8080
