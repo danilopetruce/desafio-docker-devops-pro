@@ -1,0 +1,2 @@
+# Questão 04
+Último exercício com banco de dados! Crie um docker compose com o banco de dados Redis e a ferramenta de interface Redis Commander (https://hub.docker.com/r/rediscommander/redis-commander).
