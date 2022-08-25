@@ -1,0 +1,39 @@
+#DOCKER COMPOSE FILE
+version: '3.8'
+
+volumes:
+  mongo_vol:
+
+
+networks:
+  mongo_net:
+    driver: bridge
+
+services:
+  mongodb:
+    image: mongo:latest
+    restart: unless-stopped
+
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_vol:/data/db
+    networks:
+      - mongo_net
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongouser
+      MONGO_INITDB_ROOT_PASSWORD: mongopwd
+
+  mongo-express:
+    image: mongo-express:latest
+    restart: unless-stopped
+
+    ports:
+      - 8081:8081
+    networks:
+      - mongo_net
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: mongouser
+      ME_CONFIG_MONGODB_ADMINPASSWORD: mongopwd
+      ME_CONFIG_MONGODB_SERVER: mongodb
