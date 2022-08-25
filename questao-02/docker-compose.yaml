@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  mariadb:
+    image: 'bitnami/mariadb:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - /data/db
+    environment:
+      PMA_HOST: mariadb

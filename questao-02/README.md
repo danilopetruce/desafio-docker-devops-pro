@@ -1,0 +1,2 @@
+# Questão 02
+Boa! Agora, é muito importante que você pratique também com outros banco de dados. Crie um docker compose com o banco de dados MariaDB e a ferramenta de interface phpMyAdmin (https://www.phpmyadmin.net).
