@@ -1,0 +1,2 @@
+# Questão 03
+Mais um banco de dados bastante utilizado no mercado. Crie um docker compose com o banco de dados PostgreSQL e a ferramenta de interface pgAdmin (https://www.pgadmin.org).
